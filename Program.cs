@@ -502,13 +502,13 @@ namespace Assignment_oop_4
 
             #region PART 2 : 8
 
-        //    public sealed class CompletedShipment : Shipment
-        //{
-        //    public CompletedShipment(double weight, string street, string city, string country)
-        //        : base(weight, street, city, country)
-        //    {
-        //    }
-        
+            //    public sealed class CompletedShipment : Shipment
+            //{
+            //    public CompletedShipment(double weight, string street, string city, string country)
+            //        : base(weight, street, city, country)
+            //    {
+            //    }
+
 
 
 
@@ -523,6 +523,56 @@ namespace Assignment_oop_4
 
 
 
+            #region PART 2 : 9
+
+
+        //    public class InternationalShipment : Shipment
+        //{
+        //    public string TrackingNumber { get; set; }
+        //    public string Description { get; set; }
+        //    public decimal DeliveryFee { get; set; }
+        //    public string DestinationCountry { get; set; }
+        //    public decimal CustomsFee { get; set; }
+
+        //    public InternationalShipment(double weight, string trackingNumber, string description, decimal deliveryFee, string destinationCountry, decimal customsFee, string street, string city, string country)
+        //        : base(weight, street, city, country)
+        //    {
+        //        TrackingNumber = trackingNumber;
+        //        Description = description;
+        //        DeliveryFee = deliveryFee;
+        //        DestinationCountry = destinationCountry;
+        //        CustomsFee = customsFee;
+        //    }
+
+        //    public override decimal EstimatedCost => DeliveryFee + ((decimal)Weight * 5m) + CustomsFee;
+
+        //    public override void PrintShipment()
+        //    {
+        //        Console.WriteLine($"Tracking: {TrackingNumber}, Description: {Description}, Weight: {Weight}, Delivery Fee: {DeliveryFee}, Estimated Cost: {EstimatedCost}, Destination Country: {DestinationCountry}, Customs Fee: {CustomsFee}");
+        //    }
+
+        //    public virtual void GenerateCustomsReport()
+        //    {
+        //        Console.WriteLine("Generating Customs Report for International Shipment...");
+        //    }
+        //}
+
+        //public class PriorityInternationalShipment : InternationalShipment
+        //{
+        //    public PriorityInternationalShipment(double weight, string trackingNumber, string description, decimal deliveryFee, string destinationCountry, decimal customsFee, string street, string city, string country)
+        //        : base(weight, trackingNumber, description, deliveryFee, destinationCountry, customsFee, street, city, country)
+        //    {
+        //    }
+
+        //    public sealed override void GenerateCustomsReport()
+        //    {
+        //        Console.WriteLine("Generating Priority Customs Report (Sealed)...");
+        //    }
+        //}
+
+
+
+            #endregion
 
 
 
