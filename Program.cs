@@ -207,77 +207,164 @@ namespace Assignment_oop_4
             #region PART 2 : 4
             //4  Override PrintShipment()
 
-        //    public class StandardShipment : Shipment
-        //{
-        //    public string TrackingNumber { get; set; }
-        //    public string Description { get; set; }
-        //    public decimal DeliveryFee { get; set; }
+            //    public class StandardShipment : Shipment
+            //{
+            //    public string TrackingNumber { get; set; }
+            //    public string Description { get; set; }
+            //    public decimal DeliveryFee { get; set; }
 
-        //    public StandardShipment(double weight, string trackingNumber, string description, decimal deliveryFee) : base(weight)
-        //    {
-        //        TrackingNumber = trackingNumber;
-        //        Description = description;
-        //        DeliveryFee = deliveryFee;
-        //    }
+            //    public StandardShipment(double weight, string trackingNumber, string description, decimal deliveryFee) : base(weight)
+            //    {
+            //        TrackingNumber = trackingNumber;
+            //        Description = description;
+            //        DeliveryFee = deliveryFee;
+            //    }
 
-        //    public override void PrintShipment()
-        //    {
-        //        Console.WriteLine($"Tracking: {TrackingNumber}, Description: {Description}, Weight: {Weight}, Delivery Fee: {DeliveryFee}, Estimated Cost: {EstimatedCost}");
-        //    }
-        //}
+            //    public override void PrintShipment()
+            //    {
+            //        Console.WriteLine($"Tracking: {TrackingNumber}, Description: {Description}, Weight: {Weight}, Delivery Fee: {DeliveryFee}, Estimated Cost: {EstimatedCost}");
+            //    }
+            //}
 
-        //public class ExpressShipment : Shipment
-        //{
-        //    public string TrackingNumber { get; set; }
-        //    public string Description { get; set; }
-        //    public decimal DeliveryFee { get; set; }
-        //    public decimal ExtraFee { get; set; }
+            //public class ExpressShipment : Shipment
+            //{
+            //    public string TrackingNumber { get; set; }
+            //    public string Description { get; set; }
+            //    public decimal DeliveryFee { get; set; }
+            //    public decimal ExtraFee { get; set; }
 
-        //    public ExpressShipment(double weight, string trackingNumber, string description, decimal deliveryFee, decimal extraFee) : base(weight)
-        //    {
-        //        TrackingNumber = trackingNumber;
-        //        Description = description;
-        //        DeliveryFee = deliveryFee;
-        //        ExtraFee = extraFee;
-        //    }
+            //    public ExpressShipment(double weight, string trackingNumber, string description, decimal deliveryFee, decimal extraFee) : base(weight)
+            //    {
+            //        TrackingNumber = trackingNumber;
+            //        Description = description;
+            //        DeliveryFee = deliveryFee;
+            //        ExtraFee = extraFee;
+            //    }
 
-        //    public override decimal EstimatedCost => DeliveryFee + ((decimal)Weight * 5m) + ExtraFee;
+            //    public override decimal EstimatedCost => DeliveryFee + ((decimal)Weight * 5m) + ExtraFee;
 
-        //    public override void PrintShipment()
-        //    {
-        //        Console.WriteLine($"Tracking: {TrackingNumber}, Description: {Description}, Weight: {Weight}, Delivery Fee: {DeliveryFee}, Estimated Cost: {EstimatedCost}, Extra Fee: {ExtraFee}");
-        //    }
-        //}
+            //    public override void PrintShipment()
+            //    {
+            //        Console.WriteLine($"Tracking: {TrackingNumber}, Description: {Description}, Weight: {Weight}, Delivery Fee: {DeliveryFee}, Estimated Cost: {EstimatedCost}, Extra Fee: {ExtraFee}");
+            //    }
+            //}
 
-        //public class InternationalShipment : Shipment
-        //{
-        //    public string TrackingNumber { get; set; }
-        //    public string Description { get; set; }
-        //    public decimal DeliveryFee { get; set; }
-        //    public string DestinationCountry { get; set; }
-        //    public decimal CustomsFee { get; set; }
+            //public class InternationalShipment : Shipment
+            //{
+            //    public string TrackingNumber { get; set; }
+            //    public string Description { get; set; }
+            //    public decimal DeliveryFee { get; set; }
+            //    public string DestinationCountry { get; set; }
+            //    public decimal CustomsFee { get; set; }
 
-        //    public InternationalShipment(double weight, string trackingNumber, string description, decimal deliveryFee, string destinationCountry, decimal customsFee) : base(weight)
-        //    {
-        //        TrackingNumber = trackingNumber;
-        //        Description = description;
-        //        DeliveryFee = deliveryFee;
-        //        DestinationCountry = destinationCountry;
-        //        CustomsFee = customsFee;
-        //    }
+            //    public InternationalShipment(double weight, string trackingNumber, string description, decimal deliveryFee, string destinationCountry, decimal customsFee) : base(weight)
+            //    {
+            //        TrackingNumber = trackingNumber;
+            //        Description = description;
+            //        DeliveryFee = deliveryFee;
+            //        DestinationCountry = destinationCountry;
+            //        CustomsFee = customsFee;
+            //    }
 
-        //    public override decimal EstimatedCost => DeliveryFee + ((decimal)Weight * 5m) + CustomsFee;
+            //    public override decimal EstimatedCost => DeliveryFee + ((decimal)Weight * 5m) + CustomsFee;
 
-        //    public override void PrintShipment()
-        //    {
-        //        Console.WriteLine($"Tracking: {TrackingNumber}, Description: {Description}, Weight: {Weight}, Delivery Fee: {DeliveryFee}, Estimated Cost: {EstimatedCost}, Destination Country: {DestinationCountry}, Customs Fee: {CustomsFee}");
-        //    }
-        //}
+            //    public override void PrintShipment()
+            //    {
+            //        Console.WriteLine($"Tracking: {TrackingNumber}, Description: {Description}, Weight: {Weight}, Delivery Fee: {DeliveryFee}, Estimated Cost: {EstimatedCost}, Destination Country: {DestinationCountry}, Customs Fee: {CustomsFee}");
+            //    }
+            //}
 
 
 
             #endregion
 
-    }
+
+
+
+            #region PART 2 : 5
+
+
+
+
+            //    public class Driver
+            //{
+            //    public int DriverId { get; set; }
+            //    public string FullName { get; set; }
+            //    public string PhoneNumber { get; set; }
+
+            //    public Driver(int driverId, string fullName, string phoneNumber)
+            //    {
+            //        DriverId = driverId;
+            //        FullName = fullName;
+            //        PhoneNumber = phoneNumber;
+            //    }
+            //}
+
+            //public class DeliveryCenter
+            //{
+            //    public Driver Driver { get; set; }
+
+            //    public DeliveryCenter(Driver driver)
+            //    {
+            //        Driver = driver;
+            //    }
+            //}
+
+            //public class DeliveryAddress
+            //{
+            //    public string Street { get; set; }
+            //    public string City { get; set; }
+            //    public string Country { get; set; }
+
+            //    public DeliveryAddress(string street, string city, string country)
+            //    {
+            //        Street = street;
+            //        City = city;
+            //        Country = country;
+            //    }
+            //}
+
+            //public class Shipment
+            //{
+            //    public double Weight { get; set; }
+            //    public DeliveryAddress Address { get; private set; }
+
+            //    public Shipment(double weight, string street, string city, string country)
+            //    {
+            //        Weight = weight;
+            //        Address = new DeliveryAddress(street, city, country);
+            //    }
+
+            //    public virtual decimal EstimatedCost { get; set; }
+
+            //    public virtual void PrintShipment()
+            //    {
+            //        Console.WriteLine($"Shipment Cost: {EstimatedCost}");
+            //    }
+
+            //    public void UpdateWeight(double weight)
+            //    {
+            //        Weight = weight;
+            //    }
+
+            //    public void UpdateWeight(double weight, double extraPackingWeight)
+            //    {
+            //        Weight = weight + extraPackingWeight;
+            //    }
+            //}
+
+
+
+
+
+
+            #endregion
+
+
+
+
+
+
+        }
     }
 }
