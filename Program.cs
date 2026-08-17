@@ -146,54 +146,138 @@ namespace Assignment_oop_4
             #region PART 2 : 3
 
 
+            //    public class StandardShipment : Shipment
+            //{
+            //    public StandardShipment(double weight) : base(weight)
+            //    {
+            //    }
+            //}
+
+            //public class ExpressShipment : Shipment
+            //{
+            //    public decimal DeliveryFee { get; set; }
+            //    public decimal ExtraFee { get; set; }
+
+            //    public ExpressShipment(double weight, decimal deliveryFee, decimal extraFee) : base(weight)
+            //    {
+            //        DeliveryFee = deliveryFee;
+            //        ExtraFee = extraFee;
+            //    }
+
+            //    public override decimal EstimatedCost
+            //    {
+            //        get
+            //        {
+            //            return DeliveryFee + ((decimal)Weight * 5m) + ExtraFee;
+            //        }
+            //    }
+            //}
+
+            //public class InternationalShipment : Shipment
+            //{
+            //    public decimal DeliveryFee { get; set; }
+            //    public decimal CustomsFee { get; set; }
+
+            //    public InternationalShipment(double weight, decimal deliveryFee, decimal customsFee) : base(weight)
+            //    {
+            //        DeliveryFee = deliveryFee;
+            //        CustomsFee = customsFee;
+            //    }
+
+            //    public override decimal EstimatedCost
+            //    {
+            //        get
+            //        {
+            //            return DeliveryFee + ((decimal)Weight * 5m) + CustomsFee;
+            //        }
+            //    }
+
+            #endregion
+
+
+
+
+
+
+
+
+
+
+
+            #region PART 2 : 4
+            //4  Override PrintShipment()
+
         //    public class StandardShipment : Shipment
         //{
-        //    public StandardShipment(double weight) : base(weight)
+        //    public string TrackingNumber { get; set; }
+        //    public string Description { get; set; }
+        //    public decimal DeliveryFee { get; set; }
+
+        //    public StandardShipment(double weight, string trackingNumber, string description, decimal deliveryFee) : base(weight)
         //    {
+        //        TrackingNumber = trackingNumber;
+        //        Description = description;
+        //        DeliveryFee = deliveryFee;
+        //    }
+
+        //    public override void PrintShipment()
+        //    {
+        //        Console.WriteLine($"Tracking: {TrackingNumber}, Description: {Description}, Weight: {Weight}, Delivery Fee: {DeliveryFee}, Estimated Cost: {EstimatedCost}");
         //    }
         //}
 
         //public class ExpressShipment : Shipment
         //{
+        //    public string TrackingNumber { get; set; }
+        //    public string Description { get; set; }
         //    public decimal DeliveryFee { get; set; }
         //    public decimal ExtraFee { get; set; }
 
-        //    public ExpressShipment(double weight, decimal deliveryFee, decimal extraFee) : base(weight)
+        //    public ExpressShipment(double weight, string trackingNumber, string description, decimal deliveryFee, decimal extraFee) : base(weight)
         //    {
+        //        TrackingNumber = trackingNumber;
+        //        Description = description;
         //        DeliveryFee = deliveryFee;
         //        ExtraFee = extraFee;
         //    }
 
-        //    public override decimal EstimatedCost
+        //    public override decimal EstimatedCost => DeliveryFee + ((decimal)Weight * 5m) + ExtraFee;
+
+        //    public override void PrintShipment()
         //    {
-        //        get
-        //        {
-        //            return DeliveryFee + ((decimal)Weight * 5m) + ExtraFee;
-        //        }
+        //        Console.WriteLine($"Tracking: {TrackingNumber}, Description: {Description}, Weight: {Weight}, Delivery Fee: {DeliveryFee}, Estimated Cost: {EstimatedCost}, Extra Fee: {ExtraFee}");
         //    }
         //}
 
         //public class InternationalShipment : Shipment
         //{
+        //    public string TrackingNumber { get; set; }
+        //    public string Description { get; set; }
         //    public decimal DeliveryFee { get; set; }
+        //    public string DestinationCountry { get; set; }
         //    public decimal CustomsFee { get; set; }
 
-        //    public InternationalShipment(double weight, decimal deliveryFee, decimal customsFee) : base(weight)
+        //    public InternationalShipment(double weight, string trackingNumber, string description, decimal deliveryFee, string destinationCountry, decimal customsFee) : base(weight)
         //    {
+        //        TrackingNumber = trackingNumber;
+        //        Description = description;
         //        DeliveryFee = deliveryFee;
+        //        DestinationCountry = destinationCountry;
         //        CustomsFee = customsFee;
         //    }
 
-        //    public override decimal EstimatedCost
+        //    public override decimal EstimatedCost => DeliveryFee + ((decimal)Weight * 5m) + CustomsFee;
+
+        //    public override void PrintShipment()
         //    {
-        //        get
-        //        {
-        //            return DeliveryFee + ((decimal)Weight * 5m) + CustomsFee;
-        //        }
+        //        Console.WriteLine($"Tracking: {TrackingNumber}, Description: {Description}, Weight: {Weight}, Delivery Fee: {DeliveryFee}, Estimated Cost: {EstimatedCost}, Destination Country: {DestinationCountry}, Customs Fee: {CustomsFee}");
         //    }
+        //}
+
+
 
             #endregion
 
-        }
+    }
     }
 }
