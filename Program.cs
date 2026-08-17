@@ -100,28 +100,42 @@ namespace Assignment_oop_4
             #region Part 02 — Practical
             //1  Update the Shipment Class
 
-        //    public class Shipment
-        //{
-        //    public double Weight { get; set; }
+            //    public class Shipment
+            //{
+            //    public double Weight { get; set; }
 
-        //    public virtual decimal EstimatedCost { get; set; }
+            //    public virtual decimal EstimatedCost { get; set; }
 
-        //    public virtual void PrintShipment()
-        //    {
-        //        Console.WriteLine($"Shipment Cost: {EstimatedCost}");
-        //    }
+            //    public virtual void PrintShipment()
+            //    {
+            //        Console.WriteLine($"Shipment Cost: {EstimatedCost}");
+            //    }
 
-        //    public void UpdateWeight(double weight)
-        //    {
-        //        Weight = weight;
-        //    }
+            //    public void UpdateWeight(double weight)
+            //    {
+            //        Weight = weight;
+            //    }
 
-        //    public void UpdateWeight(double weight, double extraPackingWeight)
-        //    {
-        //        Weight = weight + extraPackingWeight;
-        //    }
+            //    public void UpdateWeight(double weight, double extraPackingWeight)
+            //    {
+            //        Weight = weight + extraPackingWeight;
+            //    }
+
+
+
+            #endregion
+
+
+
+
+
+            #region PART 2 : 2
+
+            //2  Constructor Chaining
+
+          
         
-
+             //مش فاهمه 
 
             #endregion
 
