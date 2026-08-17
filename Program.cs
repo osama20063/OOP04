@@ -476,20 +476,55 @@ namespace Assignment_oop_4
 
 
 
-        //    public static class DeliveryHelper
+            //    public static class DeliveryHelper
+            //{
+            //    public static void PrintShipmentDetails(Shipment shipment)
+            //    {
+            //        if (shipment != null)
+            //        {
+            //            shipment.PrintShipment();
+            //        }
+            //    }
+
+
+
+
+            #endregion
+
+
+
+
+
+
+
+
+
+
+            #region PART 2 : 8
+
+        //    public sealed class CompletedShipment : Shipment
         //{
-        //    public static void PrintShipmentDetails(Shipment shipment)
+        //    public CompletedShipment(double weight, string street, string city, string country)
+        //        : base(weight, street, city, country)
         //    {
-        //        if (shipment != null)
-        //        {
-        //            shipment.PrintShipment();
-        //        }
         //    }
         
 
 
 
+
+
+
+
             #endregion
+
+
+
+
+
+
+
+
 
     }
     }
