@@ -376,81 +376,81 @@ namespace Assignment_oop_4
 
 
 
-        //    public class DeliveryCenter
-        //{
-        //    private Shipment[] shipments = new Shipment[100];
-        //    private int count = 0;
+            //    public class DeliveryCenter
+            //{
+            //    private Shipment[] shipments = new Shipment[100];
+            //    private int count = 0;
 
-        //    public Driver Driver { get; set; }
+            //    public Driver Driver { get; set; }
 
-        //    public DeliveryCenter(Driver driver)
-        //    {
-        //        Driver = driver;
-        //    }
+            //    public DeliveryCenter(Driver driver)
+            //    {
+            //        Driver = driver;
+            //    }
 
-        //    public void AddShipment(Shipment shipment)
-        //    {
-        //        if (count < shipments.Length)
-        //        {
-        //            shipments[count++] = shipment;
-        //        }
-        //    }
+            //    public void AddShipment(Shipment shipment)
+            //    {
+            //        if (count < shipments.Length)
+            //        {
+            //            shipments[count++] = shipment;
+            //        }
+            //    }
 
-        //    public void RemoveShipment(int index)
-        //    {
-        //        if (index >= 0 && index < count)
-        //        {
-        //            for (int i = index; i < count - 1; i++)
-        //            {
-        //                shipments[i] = shipments[i + 1];
-        //            }
-        //            shipments[--count] = null;
-        //        }
-        //    }
+            //    public void RemoveShipment(int index)
+            //    {
+            //        if (index >= 0 && index < count)
+            //        {
+            //            for (int i = index; i < count - 1; i++)
+            //            {
+            //                shipments[i] = shipments[i + 1];
+            //            }
+            //            shipments[--count] = null;
+            //        }
+            //    }
 
-        //    public Shipment this[int index]
-        //    {
-        //        get
-        //        {
-        //            if (index >= 0 && index < count)
-        //                return shipments[index];
-        //            return null;
-        //        }
-        //        set
-        //        {
-        //            if (index >= 0 && index < count)
-        //                shipments[index] = value;
-        //        }
-        //    }
+            //    public Shipment this[int index]
+            //    {
+            //        get
+            //        {
+            //            if (index >= 0 && index < count)
+            //                return shipments[index];
+            //            return null;
+            //        }
+            //        set
+            //        {
+            //            if (index >= 0 && index < count)
+            //                shipments[index] = value;
+            //        }
+            //    }
 
-        //    public Shipment this[string trackingNumber]
-        //    {
-        //        get
-        //        {
-        //            for (int i = 0; i < count; i++)
-        //            {
-        //                if (shipments[i] is StandardShipment s && s.TrackingNumber == trackingNumber)
-        //                    return s;
-        //                if (shipments[i] is ExpressShipment e && e.TrackingNumber == trackingNumber)
-        //                    return e;
-        //                if (shipments[i] is InternationalShipment intl && intl.TrackingNumber == trackingNumber)
-        //                    return intl;
-        //            }
-        //            return null;
-        //        }
-        //    }
+            //    public Shipment this[string trackingNumber]
+            //    {
+            //        get
+            //        {
+            //            for (int i = 0; i < count; i++)
+            //            {
+            //                if (shipments[i] is StandardShipment s && s.TrackingNumber == trackingNumber)
+            //                    return s;
+            //                if (shipments[i] is ExpressShipment e && e.TrackingNumber == trackingNumber)
+            //                    return e;
+            //                if (shipments[i] is InternationalShipment intl && intl.TrackingNumber == trackingNumber)
+            //                    return intl;
+            //            }
+            //            return null;
+            //        }
+            //    }
 
-        //    public void PrintAllShipments()
-        //    {
-        //        for (int i = 0; i < count; i++)
-        //        {
-        //            if (shipments[i] != null)
-        //            {
-        //                shipments[i].PrintShipment();
-        //            }
-        //        }
-        //    }
-        
+            //    public void PrintAllShipments()
+            //    {
+            //        for (int i = 0; i < count; i++)
+            //        {
+            //            if (shipments[i] != null)
+            //            {
+            //                shipments[i].PrintShipment();
+            //            }
+            //        }
+            //    }
+
 
 
 
@@ -462,6 +462,34 @@ namespace Assignment_oop_4
 
 
 
+
+
+
+
+
+
+            #region PART 2 : 7
+
+
+
+
+
+
+
+        //    public static class DeliveryHelper
+        //{
+        //    public static void PrintShipmentDetails(Shipment shipment)
+        //    {
+        //        if (shipment != null)
+        //        {
+        //            shipment.PrintShipment();
+        //        }
+        //    }
+        
+
+
+
+            #endregion
 
     }
     }
