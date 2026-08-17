@@ -133,12 +133,67 @@ namespace Assignment_oop_4
 
             //2  Constructor Chaining
 
-          
-        
-             //مش فاهمه 
+
+
+            //مش فاهمه 
 
             #endregion
 
-    }
+
+
+
+
+            #region PART 2 : 3
+
+
+        //    public class StandardShipment : Shipment
+        //{
+        //    public StandardShipment(double weight) : base(weight)
+        //    {
+        //    }
+        //}
+
+        //public class ExpressShipment : Shipment
+        //{
+        //    public decimal DeliveryFee { get; set; }
+        //    public decimal ExtraFee { get; set; }
+
+        //    public ExpressShipment(double weight, decimal deliveryFee, decimal extraFee) : base(weight)
+        //    {
+        //        DeliveryFee = deliveryFee;
+        //        ExtraFee = extraFee;
+        //    }
+
+        //    public override decimal EstimatedCost
+        //    {
+        //        get
+        //        {
+        //            return DeliveryFee + ((decimal)Weight * 5m) + ExtraFee;
+        //        }
+        //    }
+        //}
+
+        //public class InternationalShipment : Shipment
+        //{
+        //    public decimal DeliveryFee { get; set; }
+        //    public decimal CustomsFee { get; set; }
+
+        //    public InternationalShipment(double weight, decimal deliveryFee, decimal customsFee) : base(weight)
+        //    {
+        //        DeliveryFee = deliveryFee;
+        //        CustomsFee = customsFee;
+        //    }
+
+        //    public override decimal EstimatedCost
+        //    {
+        //        get
+        //        {
+        //            return DeliveryFee + ((decimal)Weight * 5m) + CustomsFee;
+        //        }
+        //    }
+
+            #endregion
+
+        }
     }
 }
