@@ -74,23 +74,57 @@ namespace Assignment_oop_4
             #region Part 01 2
 
 
-//            (Q2: Sealed Classes and Methods):
+            //            (Q2: Sealed Classes and Methods):
 
-//a) Purpose of the sealed keyword when applied to a class:
-//The sealed keyword prevents other classes from inheriting from it.It is used to restrict inheritance, protect the class design, and improve security and compiler optimizations.
+            //a) Purpose of the sealed keyword when applied to a class:
+            //The sealed keyword prevents other classes from inheriting from it.It is used to restrict inheritance, protect the class design, and improve security and compiler optimizations.
 
-//b) Difference between a sealed class and a sealed method:
+            //b) Difference between a sealed class and a sealed method:
 
-//Sealed Class: Prevents any class from inheriting/deriving from it(it cannot be a base/parent class).
+            //Sealed Class: Prevents any class from inheriting/deriving from it(it cannot be a base/parent class).
 
-//Sealed Method: Prevents a derived class from further overriding that specific method.It can only be applied to a method that is already overriding a virtual method from a base class (using sealed override).
+            //Sealed Method: Prevents a derived class from further overriding that specific method.It can only be applied to a method that is already overriding a virtual method from a base class (using sealed override).
 
-//c) Can a sealed method be overridden? Why?
-//No, a sealed method cannot be overridden.
-//Why: The explicit purpose of applying the sealed modifier to an overridden method is to break the virtual chain and guarantee that no further derived classes can alter its implementation.
+            //c) Can a sealed method be overridden? Why?
+            //No, a sealed method cannot be overridden.
+            //Why: The explicit purpose of applying the sealed modifier to an overridden method is to break the virtual chain and guarantee that no further derived classes can alter its implementation.
 
             #endregion
 
-        }
+
+
+
+
+
+
+            #region Part 02 — Practical
+            //1  Update the Shipment Class
+
+        //    public class Shipment
+        //{
+        //    public double Weight { get; set; }
+
+        //    public virtual decimal EstimatedCost { get; set; }
+
+        //    public virtual void PrintShipment()
+        //    {
+        //        Console.WriteLine($"Shipment Cost: {EstimatedCost}");
+        //    }
+
+        //    public void UpdateWeight(double weight)
+        //    {
+        //        Weight = weight;
+        //    }
+
+        //    public void UpdateWeight(double weight, double extraPackingWeight)
+        //    {
+        //        Weight = weight + extraPackingWeight;
+        //    }
+        
+
+
+            #endregion
+
+    }
     }
 }
